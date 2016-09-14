@@ -3,9 +3,6 @@ subject: My Email Subject
 ---
 
 <style type="text/css">
-  .header {
-    /*background: #8a8a8a;*/
-  }
   .header .columns {
     padding-bottom: 0;
   }
@@ -16,35 +13,6 @@ subject: My Email Subject
   .header .wrapper-inner {
     padding: 20px;
   }
-  .header .container {
-    background: transparent;
-    border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
-  }
-  .header-logo,
-  .footer-logo {
-    padding-bottom: 15px;
-  }
-  table.button.facebook table td {
-    background: #3B5998 !important;
-    border-color: #3B5998;
-  }
-  table.button.twitter table td {
-    background: #1daced !important;
-    border-color: #1daced;
-  }
-  table.button.google table td {
-    background: #DB4A39 !important;
-    border-color: #DB4A39;
-  }
-  .wrapper.secondary {
-    background: #821127; /* $rider-dark-red */
-  }
-  .wrapper.secondary table.menu td.menu-item,
-  .wrapper.secondary table.menu th.menu-item {
-    padding-left: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 </style>
 
 <!-- Header -->
@@ -52,7 +20,7 @@ subject: My Email Subject
   <container>
     <row class="collapse">
       <columns small="12">
-        <img class="header-logo" src="/assets/img/logo-header.png" alt="Rider University Logo">
+        <img class="header-logo" src="/assets/img/logo-header.png" alt="Rider University Logo"/>
       </columns>
     </row>
   </container>
@@ -63,14 +31,14 @@ subject: My Email Subject
   <spacer size="16"></spacer>
   
   <!-- Main Content -->
-  <row>
-    <columns small="12">
+  <row class="main">
+    <columns class="main-inner" small="12">
 
       <h1>Dear John,</h1>
 
       <p class="lead">Thank you for your inquiry about transferring to Rider University. I am happy that you are considering Rider to continue your studies. Our viewbook is on its way to you, but I want to point out a few important points about why Rider is considered one of the most 'transfer friendly' schools in New Jersey.</p>
 
-      <img src="/assets/img/hero-image.png" alt="Hero Image">
+      <img class="hero-image" src="/assets/img/hero-image.png" alt="Hero Image"/>
 
       <!-- <callout class="primary">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae voluptate dolores. <a href="#">Click it!</a></p>
@@ -80,20 +48,24 @@ subject: My Email Subject
 
       <ul>
         <li>
-          <p>We know that transferability of your credits is extremely important to you. We can provide you with an unofficial credit evaluation, even before you apply. Visit our <a href="#" title="">transfer Web site</a> to learn about our <b>generous credit transfer</b> policies.</p>
+          <span class="bullet">&#8226;</span>
+          We know that transferability of your credits is extremely important to you. We can provide you with an unofficial credit evaluation, even before you apply. Visit our <a href="#" title="">transfer Web site</a> to learn about our <b>generous credit transfer</b> policies.
         </li>
         <li>
-          <p>Rider partners with community colleges through many <a href="#" title="">Guaranteed Transfer Agreements</a> designed to give you a clear pathway to your future.</p>
+          <span class="bullet">&#8226;</span>
+          Rider partners with community colleges through many <a href="#" title="">Guaranteed Transfer Agreements</a> designed to give you a clear pathway to your future.
         </li>
         <li>
-          <p>Your strong college performance is rewarded through rich <a href="#" title="">transfer scholarships</a>. Visit our website to see our <a href="#" title="">scholarship criteria</a>.
-          </p>
+          <span class="bullet">&#8226;</span>
+          Your strong college performance is rewarded through rich <a href="#" title="">transfer scholarships</a>. Visit our website to see our <a href="#" title="">scholarship criteria</a>.
         </li>
         <li>
-          <p>It’s easy for transfer students to get involved in <a href="#" title="">clubs and activities</a> as early as their first week at Rider.</p>
+          <span class="bullet">&#8226;</span>
+          It’s easy for transfer students to get involved in <a href="#" title="">clubs and activities</a> as early as their first week at Rider.
         </li>
         <li>
-          <p>As a transfer student, you can expect the kind of learning that engages your mind and heart. I invite you to become a part of Rider's <a href="#" title="">vibrant living and learning community</a>.</p>
+          <span class="bullet">&#8226;</span>
+          As a transfer student, you can expect the kind of learning that engages your mind and heart. I invite you to become a part of Rider's <a href="#" title="">vibrant living and learning community</a>.
         </li>
       </ul>
 
@@ -103,7 +75,13 @@ subject: My Email Subject
 
       <p>I look forward to seeing you on campus soon.</p>
 
+      <p class="p-spacer">&nbsp;</p>
+
       <button href="#">Visit Our Transfer Website</button>
+
+      <p class="p-spacer">&nbsp;</p>
+
+      <p class="p-spacer">&nbsp;</p>
 
       <p>Sincerely,</p>
 
@@ -125,7 +103,7 @@ subject: My Email Subject
 
     <row>
       <columns large="8">
-        <img class="footer-logo" src="/assets/img/logo-footer.png" alt="Rider University Logo">
+        <img class="footer-logo" src="/assets/img/logo-footer.png" alt="Rider University Logo"/>
         <a href="http://www.rider.edu" title="Rider University Homepage">www.rider.edu</a>
         <row>
           <columns small="5" large="3">
@@ -137,9 +115,6 @@ subject: My Email Subject
           </columns>
           <columns small="7" large="9"></columns>
         </row>
-        <!-- <button class="facebook expand" href="#">Facebook</button>
-        <button class="twitter expand" href="#">Twitter</button>
-        <button class="google expand" href="#">Google+</button> -->
       </columns>
       <columns large="4">
         <p>
@@ -154,9 +129,13 @@ subject: My Email Subject
           <br/>
           <a href="tel:+8002579026" title="Call 800-257-9026">800-257-9026</a> (Admissions)
         </p>
-        <!-- <h5>Contact Info:</h5>
-        <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p> -->
+        <menu class="social">
+          <item href="#" title="Like Us on Facebook"><img src="/assets/img/icon-facebook.png" alt="Facebook"/></item>
+          <item href="#" title="Follow Us on Twitter"><img src="/assets/img/icon-twitter.png" alt="Twitter"/></item>
+          <item href="#" title="Subscribe to our channel on YouTube"><img src="/assets/img/icon-youtube.png" alt="YouTube"/></item>
+          <item href="#" title="Follow Us on LinkedIn"><img src="/assets/img/icon-linkedin.png" alt="LinkedIn"/></item>
+          <item href="#" title="Follow Us on Instagram"><img src="/assets/img/icon-instagram.png" alt="Instagram"/></item>
+        </menu>
       </columns>
     </row>
 

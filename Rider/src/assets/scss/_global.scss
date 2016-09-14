@@ -1,10 +1,58 @@
+.main {
+
+	p,
+	ul,
+	ol {
+		margin-bottom: 15px;
+	}
+
+	p.p-spacer {
+		margin-bottom: 0;
+	}
+
+}
+
+td.large-12.last,
+th.large-12.last {
+
+	&.main-inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
 a {
 	text-decoration: underline;
+	font-weight: bold;
 }
 
 ul,
 ol {
+	margin-top: 0;
 	padding-left: 20px;
+
+	li {
+		margin-bottom: 10px;
+	}
+
+}
+
+ul {
+	list-style: none;
+
+	li {
+		text-indent: -21px;
+	}
+
+	.bullet {
+		color: $rider-red;
+		padding-right: 8px;
+		font-size: 24px;
+		line-height: 0;
+		vertical-align: middle;
+	}
+
 }
 
 .button {
@@ -14,17 +62,16 @@ ol {
 .secondary {
 
 	* {
-		color: #FFF; /* $white */
+		color: $white;
 		font-size: 12px;
 	}
 
 	a {
-		font-weight: bold;
 
 		&:hover {
-			color: #FFF; /* $white */
+			color: $white;
 		}
-		
+
 	}
 
 }
@@ -33,4 +80,45 @@ ol {
 	cursor: default;
 	pointer-events: none;
 	text-decoration: none;
+}
+
+td.columns table:not(.button),
+td.column table:not(.button),
+th.columns table:not(.button),
+th.column table:not(.button) {
+
+	&.social {
+		width: 130px;
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+}
+
+.wrapper.secondary {
+	background: #821127; /* $rider-dark-red */
+}
+
+.wrapper.secondary table.menu td.menu-item,
+.wrapper.secondary table.menu th.menu-item {
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.hero-image {
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.header .container {
+	background: transparent;
+	border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
+}
+.header-logo,
+.footer-logo {
+	padding-bottom: 15px;
 }

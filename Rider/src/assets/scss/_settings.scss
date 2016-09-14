@@ -27,7 +27,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 550px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $white;
@@ -99,10 +99,10 @@ $stat-font-size: 40px;
 // ---------
 
 $button-padding: (
-  tiny: 4px 8px 4px 8px,
-  small: 5px 10px 5px 10px,
-  default: 8px 16px 8px 16px,
-  large: 10px 20px 10px 20px,
+  tiny: 4px 12px 4px 12px,
+  small: 5px 15px 5px 15px,
+  default: 6px 18px 6px 18px,
+  large: 8px 24px 8px 24px,
 );
 $button-font-size: (
   tiny: 10px,
