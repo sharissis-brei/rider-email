@@ -10,3 +10,27 @@ ol {
 .button {
 	letter-spacing: 1px;
 }
+
+.secondary {
+
+	* {
+		color: #FFF; /* $white */
+		font-size: 12px;
+	}
+
+	a {
+		font-weight: bold;
+
+		&:hover {
+			color: #FFF; /* $white */
+		}
+		
+	}
+
+}
+
+.divider a {
+	cursor: default;
+	pointer-events: none;
+	text-decoration: none;
+}

@@ -18,6 +18,11 @@ subject: My Email Subject
   }
   .header .container {
     background: transparent;
+    border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
+  }
+  .header-logo,
+  .footer-logo {
+    padding-bottom: 15px;
   }
   table.button.facebook table td {
     background: #3B5998 !important;
@@ -34,13 +39,20 @@ subject: My Email Subject
   .wrapper.secondary {
     background: #821127; /* $rider-dark-red */
   }
+  .wrapper.secondary table.menu td.menu-item,
+  .wrapper.secondary table.menu th.menu-item {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 </style>
 
+<!-- Header -->
 <wrapper class="header">
   <container>
     <row class="collapse">
       <columns small="12">
-        <img src="/assets/img/logo-header.png">
+        <img class="header-logo" src="/assets/img/logo-header.png" alt="Rider University Logo">
       </columns>
     </row>
   </container>
@@ -49,64 +61,117 @@ subject: My Email Subject
 <container>
 
   <spacer size="16"></spacer>
-
+  
+  <!-- Main Content -->
   <row>
     <columns small="12">
+
       <h1>Dear John,</h1>
+
       <p class="lead">Thank you for your inquiry about transferring to Rider University. I am happy that you are considering Rider to continue your studies. Our viewbook is on its way to you, but I want to point out a few important points about why Rider is considered one of the most 'transfer friendly' schools in New Jersey.</p>
-      <img src="http://placehold.it/580x300" alt="">
+
+      <img src="/assets/img/hero-image.png" alt="Hero Image">
+
       <!-- <callout class="primary">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda, praesentium qui vitae voluptate dolores. <a href="#">Click it!</a></p>
       </callout>
       <h2>Title Ipsum <small>This is a note.</small></h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi repellat, harum. Quas nobis id aut, aspernatur, sequi tempora laborum corporis cum debitis, ullam, dolorem dolore quisquam aperiam! Accusantium, ullam, nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequuntur commodi, aut sed, quas quam optio accusantium recusandae nesciunt, architecto veritatis. Voluptatibus sunt esse dolor ipsum voluptates, assumenda quisquam.</p> -->
+
       <ul>
         <li>
-          <p>Lorem ipsum dolor sit amet, lorem ipsum <a href="#">dolor sit</a> amet.</p>
+          <p>We know that transferability of your credits is extremely important to you. We can provide you with an unofficial credit evaluation, even before you apply. Visit our <a href="#" title="">transfer Web site</a> to learn about our <b>generous credit transfer</b> policies.</p>
         </li>
         <li>
-          <p>Lorem ipsum dolor sit amet, lorem ipsum <a href="#">dolor sit</a> amet.</p>
+          <p>Rider partners with community colleges through many <a href="#" title="">Guaranteed Transfer Agreements</a> designed to give you a clear pathway to your future.</p>
         </li>
         <li>
-          <p>Lorem ipsum dolor sit amet, lorem ipsum <a href="#">dolor sit</a> amet.</p>
+          <p>Your strong college performance is rewarded through rich <a href="#" title="">transfer scholarships</a>. Visit our website to see our <a href="#" title="">scholarship criteria</a>.
+          </p>
         </li>
         <li>
-          <p>Lorem ipsum dolor sit amet, lorem ipsum <a href="#">dolor sit</a> amet.</p>
+          <p>It’s easy for transfer students to get involved in <a href="#" title="">clubs and activities</a> as early as their first week at Rider.</p>
         </li>
         <li>
-          <p>Lorem ipsum dolor sit amet, lorem ipsum <a href="#">dolor sit</a> amet.</p>
+          <p>As a transfer student, you can expect the kind of learning that engages your mind and heart. I invite you to become a part of Rider's <a href="#" title="">vibrant living and learning community</a>.</p>
         </li>
       </ul>
+
+      <p>I invite you to visit Rider to get to know us better. Schedule a tour, be a Rider student for a day, or sign up for an open house through our website.</p>
+
+      <p>If you have questions, or would like to <a href="#" title="">schedule a time to meet with your Rider transfer counselor</a> to discuss your academic plans, please call us at <a href="tel:+6098965042" title="Call 609-896-5042">609-896-5042</a>.</p>
+
+      <p>I look forward to seeing you on campus soon.</p>
+
       <button href="#">Visit Our Transfer Website</button>
+
+      <p>Sincerely,</p>
+
+      <p>
+        <b>William T. Larrousse</b>
+        <br/>
+        Director of Undergraduate Admission
+        <br/>
+        Rider University
+      </p>
 
     </columns>
   </row>
   
+  <!-- Footer -->
   <wrapper class="secondary">
 
     <spacer size="16"></spacer>
 
     <row>
-      <columns large="6">
-        <h5>Connect With Us:</h5>
-        <button class="facebook expand" href="#">Facebook</button>
+      <columns large="8">
+        <img class="footer-logo" src="/assets/img/logo-footer.png" alt="Rider University Logo">
+        <a href="http://www.rider.edu" title="Rider University Homepage">www.rider.edu</a>
+        <row>
+          <columns small="5" large="3">
+            <menu>
+              <item href="#" title="Visit">Visit</item>
+              <item class="divider">|</item>
+              <item href="#" title="Apply">Apply</item>
+            </menu>
+          </columns>
+          <columns small="7" large="9"></columns>
+        </row>
+        <!-- <button class="facebook expand" href="#">Facebook</button>
         <button class="twitter expand" href="#">Twitter</button>
-        <button class="google expand" href="#">Google+</button>
+        <button class="google expand" href="#">Google+</button> -->
       </columns>
-      <columns large="6">
-        <h5>Contact Info:</h5>
+      <columns large="4">
+        <p>
+          Lawrenceville Campus
+          <br/>
+          2083 Lawrenceville Road
+          <br/>
+          Lawrenceville, NJ 08648
+        </p>
+        <p>
+          <a href="tel:+6098965000" title="Call 609-896-5000">609-896-5000</a> (Main)
+          <br/>
+          <a href="tel:+8002579026" title="Call 800-257-9026">800-257-9026</a> (Admissions)
+        </p>
+        <!-- <h5>Contact Info:</h5>
         <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
+        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p> -->
       </columns>
     </row>
+
+    <row>
+      <columns small="12">
+        <center>
+          <menu>
+            <!-- <item href="#">Terms</item>
+            <item href="#">Privacy</item> -->
+            <item href="#">Unsubscribe</item>
+          </menu>
+        </center>
+      </columns>
+    </row>
+
   </wrapper>
-      
-  <center>
-    <menu>
-      <item href="#">Terms</item>
-      <item href="#">Privacy</item>
-      <item href="#">Unsubscribe</item>
-    </menu>
-  </center>
 
 </container>
