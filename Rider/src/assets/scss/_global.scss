@@ -97,7 +97,7 @@ th.column table:not(.button) {
 }
 
 .wrapper.secondary {
-	background: #821127; /* $rider-dark-red */
+	background: $rider-dark-red;
 
 	* {
 		color: $white !important;
@@ -138,7 +138,7 @@ th.column table:not(.button) {
 
 .hero-image {
 	margin-bottom: 30px;
-	width: 100%;
+	width: 100% !important;
 }
 
 .header {
@@ -158,6 +158,10 @@ th.column table:not(.button) {
 		padding: 16px;
 	}
 
+	.columns {
+		padding-bottom: 0;
+	}
+
 }
 
 .browser-link {
@@ -171,6 +175,22 @@ th.column table:not(.button) {
 		font-weight: normal;
 		text-align: center;
 		display: block;
+	}
+
+}
+
+.thumbnail-links {
+	margin: $paragraph-margin-bottom 0;
+
+	img {
+		width: 100% !important;
+	}
+
+	h2 {
+		background: $rider-dark-red;
+		color: $white;
+		font-size: 13px;
+		padding: 10px;
 	}
 
 }
