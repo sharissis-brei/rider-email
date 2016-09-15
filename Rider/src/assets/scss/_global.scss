@@ -16,10 +16,14 @@ td.large-12.last,
 th.large-12.last {
 
 	&.main-inner {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 
+}
+
+h1 {
+	margin: 0;
 }
 
 a {
@@ -59,27 +63,11 @@ ul {
 	letter-spacing: 1px;
 }
 
-.secondary {
-
-	* {
-		color: $white;
-		font-size: 12px;
-	}
-
-	a {
-
-		&:hover {
-			color: $white;
-		}
-
-	}
-
-}
-
 .divider a {
 	cursor: default;
 	pointer-events: none;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 td.columns table:not(.button),
@@ -88,7 +76,7 @@ th.columns table:not(.button),
 th.column table:not(.button) {
 
 	&.social {
-		width: 130px;
+		width: 105px;
 
 		img {
 			width: 100%;
@@ -100,13 +88,33 @@ th.column table:not(.button) {
 
 .wrapper.secondary {
 	background: #821127; /* $rider-dark-red */
-}
 
-.wrapper.secondary table.menu td.menu-item,
-.wrapper.secondary table.menu th.menu-item {
-	padding-left: 0;
-	padding-top: 0;
-	padding-bottom: 0;
+	* {
+		color: $white;
+		font-size: 12px;
+	}
+
+	a {
+		color: $white !important;
+
+		&:hover {
+			color: $white;
+		}
+
+	}
+
+	table.menu td.menu-item,
+	table.menu th.menu-item {
+		padding-left: 0;
+		padding-right: 5px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.wrapper-inner {
+		padding: 5px 10px 15px 10px;
+	}
+
 }
 
 .hero-image {
@@ -118,7 +126,23 @@ th.column table:not(.button) {
 	background: transparent;
 	border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
 }
+
 .header-logo,
 .footer-logo {
 	padding-bottom: 15px;
+}
+
+.browser-link {
+
+	.wrapper-inner {
+		padding: 5px 0;
+	}
+
+	a {
+		font-size: 9px;
+		font-weight: normal;
+		text-align: center;
+		display: block;
+	}
+
 }
