@@ -1,17 +1,3 @@
-.main {
-
-	p,
-	ul,
-	ol {
-		margin-bottom: 15px;
-	}
-
-	p.p-spacer {
-		margin-bottom: 0;
-	}
-
-}
-
 td.large-12.last,
 th.large-12.last {
 
@@ -23,7 +9,7 @@ th.large-12.last {
 }
 
 h1 {
-	margin: 0;
+	margin-bottom: 0 !important;
 }
 
 a {
@@ -31,10 +17,20 @@ a {
 	font-weight: bold;
 }
 
+p {
+	margin: $paragraph-margin-bottom 0;
+
+	&.lead {
+		margin: 0 0 $paragraph-margin-bottom;
+	}
+
+}
+
 ul,
 ol {
 	margin-top: 0;
 	padding-left: 20px;
+	margin-bottom: 15px;
 
 	li {
 		margin-bottom: 10px;
@@ -43,18 +39,32 @@ ol {
 }
 
 ul {
-	list-style: none;
 
-	li {
-		text-indent: -21px;
+	&.red-bullets {
+		list-style: none !important;
+
+		li {
+			text-indent: -21px;
+		}
+
+		.bullet {
+			color: $rider-red;
+			padding-right: 8px;
+			font-size: 24px;
+			line-height: 0;
+			vertical-align: middle;
+			display: inline;
+			line-height: 0;
+		}
+
 	}
 
 	.bullet {
-		color: $rider-red;
-		padding-right: 8px;
-		font-size: 24px;
-		line-height: 0;
-		vertical-align: middle;
+		width: 0;
+		height: 0;
+		display: none; /* Generic */
+		mso-hide: all; /* Outlook clients */
+		overflow: hidden; /* Generic */
 	}
 
 }
@@ -90,7 +100,7 @@ th.column table:not(.button) {
 	background: #821127; /* $rider-dark-red */
 
 	* {
-		color: $white;
+		color: $white !important;
 		font-size: 12px;
 	}
 
@@ -103,6 +113,10 @@ th.column table:not(.button) {
 
 	}
 
+	p {
+		margin: 0;
+	}
+
 	table.menu td.menu-item,
 	table.menu th.menu-item {
 		padding-left: 0;
@@ -113,6 +127,11 @@ th.column table:not(.button) {
 
 	.wrapper-inner {
 		padding: 5px 10px 15px 10px;
+
+		@media only screen and (max-width: 566px) {
+			padding: 5px 0 15px 0;
+		}
+
 	}
 
 }
@@ -122,14 +141,23 @@ th.column table:not(.button) {
 	width: 100%;
 }
 
-.header .container {
-	background: transparent;
-	border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
-}
+.header {
 
-.header-logo,
-.footer-logo {
-	padding-bottom: 15px;
+	.container {
+		background: transparent;
+		border-bottom: 2px solid #575d5c; /* $rider-dark-gray */
+		width: $global-width - 50px;
+		
+		> tbody > tr > td {
+			padding-bottom: 15px;
+		}
+
+	}
+
+	.wrapper-inner {
+		padding: 16px;
+	}
+
 }
 
 .browser-link {
