@@ -27,7 +27,7 @@ ul,
 ol {
 	padding-left: 20px;
 	margin-top: $paragraph-margin-top;
-	margin-bottom: $paragraph-margin-bottom;
+	margin-bottom: $paragraph-margin-bottom - 10px;
 	
 	&,
 	li {
@@ -73,6 +73,8 @@ ul {
 }
 
 .list {
+	margin-top: $paragraph-margin-top;
+	margin-bottom: $paragraph-margin-bottom - 10px;
 
 	tr td {
 		padding-bottom: 10px;
