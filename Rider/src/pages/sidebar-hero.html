@@ -27,8 +27,10 @@ subject: My Email Subject
   <!-- Main Content -->
   <row class="main">
     <columns class="main-inner" large="8" valign="top">
-
-      <img class="hero-image" src="http://www.sarahharissis.com/images/hero-image-small.png" alt="Hero Image" width="363" />
+      
+      <div class="hero-image-container">
+        <img class="hero-image" src="http://www.sarahharissis.com/images/hero-image-small.png" alt="Hero Image" width="363" />
+      </div>
 
       <h1>Dear John,</h1>
 
@@ -40,20 +42,22 @@ subject: My Email Subject
 
       <p>Second, of course, you’ll need to <a href="#">apply<a/>. Why not <a href="#">get your application started</a> today? Start your streamlined Transfer Application today and receive these special benefits:</p>
 
-      <ul>
-        <li>
-          <span class="bullet">&#8226;</span>
-          No application fee, just select "I have been granted a fee waiver" in the fee section
-        </li>
-        <li>
-          <span class="bullet">&#8226;</span>
-          A quick admission decision
-        </li>
-        <li>
-          <span class="bullet">&#8226;</span>
-          Priority scholarship consideration
-        </li>
-      </ul>
+      <table class="list">
+        <tbody>
+          <tr>
+            <td valign="top"><span class="bullet">&#8226;</span></td>
+            <td valign="top">No application fee, just select "I have been granted a fee waiver" in the fee section</td>
+          </tr>
+          <tr>
+            <td valign="top"><span class="bullet">&#8226;</span></td>
+            <td valign="top">A quick admission decision</td>
+          </tr>
+          <tr>
+            <td valign="top"><span class="bullet">&#8226;</span></td>
+            <td valign="top">Priority scholarship consideration</td>
+          </tr>
+        </tbody>
+      </table>
 
       <p>And remember, I am here to assist you at any time. As your personal transfer admission counselor, I will be happy to work with you throughout the process.</p>
 

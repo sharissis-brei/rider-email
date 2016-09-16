@@ -25,9 +25,9 @@ p {
 
 ul,
 ol {
-	margin-top: 0px;
 	padding-left: 20px;
-	margin-bottom: 15px;
+	margin-top: $paragraph-margin-top;
+	margin-bottom: $paragraph-margin-bottom;
 	
 	&,
 	li {
@@ -51,15 +51,6 @@ ul {
 			text-indent: -21px;
 		}
 
-		.bullet {
-			color: $rider-red;
-			padding-right: 8px;
-			font-size: 24px;
-			line-height: 0%;
-			vertical-align: middle;
-			display: inline;
-		}
-
 	}
 
 	.bullet {
@@ -68,6 +59,28 @@ ul {
 		display: none; /* Generic */
 		mso-hide: all; /* Outlook clients */
 		overflow: hidden; /* Generic */
+	}
+
+}
+
+.bullet {
+	color: $rider-red;
+	padding-right: 8px;
+	font-size: 24px;
+	// line-height: 0%;
+	vertical-align: text-top;
+	display: inline-block;
+}
+
+.list {
+
+	tr td {
+		padding-bottom: 10px;
+
+		&:first-child {
+			width: 20px;
+		}
+
 	}
 
 }
@@ -150,8 +163,11 @@ th.column table:not(.button) {
 
 }
 
-.hero-image {
+.hero-image-container {
 	margin-bottom: 30px;
+}
+
+.hero-image {
 	width: 100% !important;
 }
 
