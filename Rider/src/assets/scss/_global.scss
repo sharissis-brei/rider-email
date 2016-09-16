@@ -2,10 +2,6 @@ body {
 	mso-line-height-rule: exactly;
 }
 
-h1 {
-	margin-bottom: 0px !important;
-}
-
 a {
 	text-decoration: underline;
 	font-weight: bold;
@@ -13,52 +9,9 @@ a {
 
 p {
 	margin-top: $paragraph-margin-top;
-	margin-bottom: $paragraph-margin-bottom;
-	margin-left: 0px;
-	margin-right: 0px;
 
 	&.lead {
 		margin-top: 0px;
-	}
-
-}
-
-ul,
-ol {
-	padding-left: 20px;
-	margin-top: $paragraph-margin-top;
-	margin-bottom: $paragraph-margin-bottom - 10px;
-	
-	&,
-	li {
-		mso-line-height-rule: exactly;
-		line-height: $global-line-height !important;
-		// mso-line-height-alt: 1.5;
-	}
-
-	li {
-		margin-bottom: 10px;
-	}
-
-}
-
-ul {
-
-	&.red-bullets {
-		list-style: none !important;
-
-		li {
-			text-indent: -21px;
-		}
-
-	}
-
-	.bullet {
-		width: 0;
-		height: 0;
-		display: none; /* Generic */
-		mso-hide: all; /* Outlook clients */
-		overflow: hidden; /* Generic */
 	}
 
 }
@@ -67,7 +20,6 @@ ul {
 	color: $rider-red;
 	padding-right: 8px;
 	font-size: 24px;
-	// line-height: 0%;
 	vertical-align: text-top;
 	display: inline-block;
 }
@@ -119,6 +71,11 @@ th.column table:not(.button) {
 
 }
 
+table.button table td a {
+	width: auto;
+	display: inline-block;
+}
+
 // Footer
 .wrapper.secondary {
 	background: $rider-dark-red;
@@ -156,11 +113,6 @@ th.column table:not(.button) {
 
 	.wrapper-inner {
 		padding: 5px 10px 15px 10px;
-
-		@media only screen and (max-width: 566px) {
-			padding: 5px 0px 15px 0px;
-		}
-
 	}
 
 }
@@ -217,21 +169,20 @@ th.column table:not(.button) {
 
 	img {
 		width: 168px;
-
-		@media only screen and (max-width: 566px) {
-			width: 100% !important;
-		}
-
 	}
 
-	h2 {
+	.caption {
 		background: $rider-dark-red;
-		color: $white;
-		font-size: 13px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+
+	h2 {
+		color: $white;
+		font-size: 13px;
+		line-height: 125% !important;
 	}
 
 }
@@ -285,6 +236,18 @@ th.callout-inner.secondary {
 
 		}
 
+	}
+
+}
+
+@media only screen and (max-width: 625px) {
+
+	.wrapper.secondary .wrapper-inner {
+		padding: 5px 0px 15px 0px;
+	}
+	
+	.thumbnail-links img {
+		width: 100% !important;
 	}
 
 }
