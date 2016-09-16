@@ -2,51 +2,19 @@
 subject: My Email Subject
 ---
 
-<style type="text/css">
-  .header {
-    background: #8a8a8a;
-  }
-  .header .columns {
-    padding-bottom: 0;
-  }
-  .header p {
-    color: #fff;
-    padding-top: 15px;
-  }
-  .header .wrapper-inner {
-    padding: 20px;
-  }
-  .header .container {
-    background: transparent;
-  }
-  table.button.facebook table td {
-    background: #3B5998 !important;
-    border-color: #3B5998;
-  }
-  table.button.twitter table td {
-    background: #1daced !important;
-    border-color: #1daced;
-  }
-  table.button.google table td {
-    background: #DB4A39 !important;
-    border-color: #DB4A39;
-  }
-  .wrapper.secondary {
-    background: #f3f3f3;
-  }
-  .sidebar .menu .menu-item {
-    border-top: 1px solid #777777;
-  }
-</style>
+<!-- Browser Link -->
+<wrapper class="browser-link">
+  <center>
+    <a href="#" title="Display this email in your browser">Display this email in your browser</a>
+  </center>
+</wrapper>
 
+<!-- Header -->
 <wrapper class="header">
   <container>
     <row class="collapse">
-      <columns small="6">
-        <img src="http://placehold.it/200x50/663399">
-      </columns>
-      <columns small="6">
-        <p class="text-right">SIDEBAR</p>
+      <columns small="12">
+        <img class="header-logo" src="http://www.sarahharissis.com/images/logo-header.png" alt="Rider University Logo"/>
       </columns>
     </row>
   </container>
@@ -55,23 +23,76 @@ subject: My Email Subject
 <container>
 
   <spacer size="16"></spacer>
+  
+  <!-- Main Content -->
+  <row class="main">
+    <columns class="main-inner" large="8" valign="top">
 
-  <row>
-    <columns large="7">
-      <h2>Hello, Han Fastolfe</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nobis velit, aliquid pariatur at fugit. Omnis at quae, libero iusto quisquam animi blanditiis neque, alias minima corporis, ab in explicabo?</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dignissimos voluptas minus, cupiditate voluptatem, voluptatum iste molestiae consectetur temporibus quae dolore nam possimus reprehenderit blanditiis laborum iusto sit. Perspiciatis, dolor.</p>
-      <callout class="secondary">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quas optio totam quidem, placeat sunt, sit iusto fugit. Harum omnis deleniti enim nihil iure, quis laudantium veniam velit animi debitis. <a href="#">Click It!</a>
-      </callout>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores minus eius amet alias odit accusantium, fugit perspiciatis nulla suscipit nisi. Laborum aliquid, voluptatum consectetur fugiat maxime architecto enim molestias aperiam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eveniet veritatis, magnam ipsam et vero necessitatibus. Deserunt facilis impedit, adipisci illo laboriosam assumenda fugiat dolorum nam odio aliquid, sit est.</p>
-      <button class="expand" href="#">Click Me!</button>
+      <h1>Dear John,</h1>
+
+      <br/>
+
+      <p class="lead" style="font-style: italic;">Here are two basic steps you’ll need to take to make Rider University the path to your greatest success:</p>
+
+      <p>First, <a href="#">visit us</a>! Visiting is the best way to see if Rider is the right “fit” for you. Through Open Houses, Tours, and Student for a Day, you’ll get the chance to explore the many advantages Rider provides for a future of lifelong successes. <a href="#">Schedule your visit online now</a>.</p>
+
+      <p>Second, of course, you’ll need to <a href="#">apply<a/>. Why not <a href="#">get your application started</a> today? Start your streamlined Transfer Application today and receive these special benefits:</p>
+
+      <ul>
+        <li>
+          <span class="bullet">&#8226;</span>
+          No application fee, just select "I have been granted a fee waiver" in the fee section
+        </li>
+        <li>
+          <span class="bullet">&#8226;</span>
+          A quick admission decision
+        </li>
+        <li>
+          <span class="bullet">&#8226;</span>
+          Priority scholarship consideration
+        </li>
+      </ul>
+
+      <p>And remember, I am here to assist you at any time. As your personal transfer admission counselor, I will be happy to work with you throughout the process.</p>
+
+      <p>Please let me know how I can help! You may call us at <a href="tel:+6098965042" title="Call 609-896-5042">800-257-9026</a> or email us at <a href="mailto:admissions@rider.edu" title="Email admissions@rider.edu">admissions@rider.edu</a>. And, of course, our <a href="http://www.rider.edu" title="Rider University Website">website</a> is a great source of information you'll need.</p>
+
+      <p>I look forward to seeing you on campus soon and helping you through the process!</p>
+
+      <br/>
+
+      <button href="#">Schedule Your Visit</button>
+
+      <br/>
+
+      <p>Sincerely,</p>
+
+      <p>
+        <b>Shannon Conte</b>
+        <br/>
+        Transfer Advisor
+        <br/>
+        Rider University
+      </p>
+
+      <br/>
+
     </columns>
-    <columns large="5" class="sidebar">
-      <callout class="secondary">
-        <h5>Header</h5>
-        <p class="lead">Sub-header</p>
+    <columns large="4" class="sidebar" valign="top">
+      <table class="sidebar-inner-table">
+        <tbody>
+          <tr>
+            <td><a href="#">Schedule your visit</a> online now.</td>
+          </tr>
+          <tr>
+            <td>Start your streamlined <a href="#">Transfer Application</a> today.</td>
+          </tr>
+          <tr>
+            <td>Call us at <a href="tel:+8002579026" title="Call 800-257-9026">800-257-9026</a> or email us at <a href="mailto:admissions@rider.edu" title="Email admissions@rider.edu">admissions@rider.edu</a>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- <callout class="secondary">
         <menu class="vertical">
           <item href="#">Just a Plain Link &raquo;</item>
           <item href="#">Just a Plain Link &raquo;</item>
@@ -81,27 +102,69 @@ subject: My Email Subject
           <item href="#">Just a Plain Link &raquo;</item>
           <item href="#">Just a Plain Link &raquo;</item>
         </menu>
-      </callout>
-      <callout class="secondary">
-        <h6>CONNECT WITH US:</h6>
-        <button class="facebook expand" href="#">Facebook</button>
-        <button class="twitter expand" href="#">Twitter</button>
-        <button class="google expand" href="#">Google+</button>
-        <p>CONTACT INFO:</p>
-        <p>Phone: 408-341-0600</p>
-        <p>Email: <a href="mailto:foundation@zurb.com">foundation@zurb.com</a></p>
-      </callout>
+      </callout> -->
     </columns>
   </row>
-  <row>
-    <columns>
-      <center>
-        <menu>
-          <item href="#">Terms</item>
-          <item href="#">Privacy</item>
-          <item href="#">Unsubscribe</item>
+  
+  <!-- Footer -->
+  <wrapper class="secondary">
+
+    <spacer size="16"></spacer>
+
+    <row>
+      <columns large="8">
+        <img class="footer-logo" src="http://www.sarahharissis.com/images/logo-footer.png" alt="Rider University Logo"/>
+        <br/>
+        <!--[if gte mso 9]>
+        <br/>
+        <![endif]-->
+        <a href="http://www.rider.edu" title="Rider University Homepage"><font color="#FFFFFF">www.rider.edu</font></a>
+        <row>
+          <columns small="5" large="3">
+            <menu>
+              <item href="#" title="Visit"><font color="#FFFFFF">Visit</font></item>
+              <item class="divider"><font color="#FFFFFF">|</font></item>
+              <item href="#" title="Apply"><font color="#FFFFFF">Apply</font></item>
+            </menu>
+          </columns>
+          <columns small="7" large="9"></columns>
+        </row>
+      </columns>
+      <columns large="4">
+        <p>
+          Lawrenceville Campus
+          <br/>
+          2083 Lawrenceville Road
+          <br/>
+          Lawrenceville, NJ 08648
+        </p>
+        <br/>
+        <p>
+          <a href="tel:+6098965000" title="Call 609-896-5000"><font color="#FFFFFF">609-896-5000</font></a> (Main)
+          <br/>
+          <a href="tel:+8002579026" title="Call 800-257-9026"><font color="#FFFFFF">800-257-9026</font></a> (Admissions)
+        </p>
+        <br/>
+        <menu class="social">
+          <item href="#" title="Like Us on Facebook"><img src="http://www.sarahharissis.com/images/icon-facebook.png" alt="Facebook"/></item>
+          <item href="#" title="Follow Us on Twitter"><img src="http://www.sarahharissis.com/images/icon-twitter.png" alt="Twitter"/></item>
+          <item href="#" title="Subscribe to our channel on YouTube"><img src="http://www.sarahharissis.com/images/icon-youtube.png" alt="YouTube"/></item>
+          <item href="#" title="Follow Us on LinkedIn"><img src="http://www.sarahharissis.com/images/icon-linkedin.png" alt="LinkedIn"/></item>
+          <item href="#" title="Follow Us on Instagram"><img src="http://www.sarahharissis.com/images/icon-instagram.png" alt="Instagram"/></item>
         </menu>
-      </center>
-    </columns>
-  </row>
+      </columns>
+    </row>
+
+    <row>
+      <columns small="12">
+        <center>
+          <menu>
+            <item href="#"><font color="#FFFFFF">Unsubscribe</font></item>
+          </menu>
+        </center>
+      </columns>
+    </row>
+
+  </wrapper>
+
 </container>

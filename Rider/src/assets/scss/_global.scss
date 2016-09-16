@@ -1,11 +1,5 @@
-td.large-12.last,
-th.large-12.last {
-
-	&.main-inner {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
+body {
+	mso-line-height-rule: exactly;
 }
 
 h1 {
@@ -113,6 +107,10 @@ th.column table:not(.button) {
 
 	}
 
+	span {
+		color: $white !important;
+	}
+
 	p {
 		margin: 0;
 	}
@@ -183,7 +181,7 @@ th.column table:not(.button) {
 	margin: $paragraph-margin-bottom 0;
 
 	img {
-		width: 163px;
+		width: 168px;
 
 		@media only screen and (max-width: 566px) {
 			width: 100% !important;
@@ -196,6 +194,59 @@ th.column table:not(.button) {
 		color: $white;
 		font-size: 13px;
 		padding: 10px;
+	}
+
+}
+
+th.callout-inner.secondary {
+	background-color: $rider-light-gray;
+}
+
+.main {
+
+	td.large-4,
+	th.large-4 {
+		
+		&.last {
+			padding-left: 0;
+		}
+
+	}
+
+}
+
+.sidebar {
+
+	> table {
+		background-color: $rider-light-gray;
+		padding: 0 15px;
+	}
+
+	th {
+		padding: 0 15px;
+	}
+
+	.sidebar-inner-table {
+
+		tr {
+
+			&:last-child td {
+				border-bottom: 0;
+			}
+
+		}
+
+		td {
+			padding: 15px 0;
+			border-bottom: 2px solid $rider-medium-gray;
+
+			&,
+			* {
+				font-size: 12px;
+			}
+
+		}
+
 	}
 
 }

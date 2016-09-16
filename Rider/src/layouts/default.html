@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
+    <!--[if !mso]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <![endif]-->
     <title>{{subject}}</title>
   </head>
   <body>
-    <!--[if gte mso 9]>
+    <!--[if mso]>
       <style type="text/css">
+        * {
+          line-height: 1.5 !important;
+        }
         .header .container {
           width: 600px !important;
         }
@@ -29,6 +35,12 @@
         }
         .thumbnail h2 {
           margin: 0 auto;
+        }
+        .main-inner {
+          width: 375px !important;
+        }
+        .sidebar {
+          width: 175px !important;
         }
       </style>
     <![endif]-->
