@@ -125,7 +125,8 @@ table.button table td a {
 	width: 100% !important;
 }
 
-.header {
+.wrapper.header {
+	width: $global-width;
 
 	.container {
 		background: transparent;
@@ -139,7 +140,7 @@ table.button table td a {
 	}
 
 	.wrapper-inner {
-		padding: 16px;
+		padding: 16px 0;
 	}
 
 	.columns {
@@ -177,6 +178,7 @@ table.button table td a {
 		padding-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
+		line-height: 100% !important;
 	}
 
 	h2 {
@@ -244,6 +246,16 @@ th.callout-inner.secondary {
 
 	.wrapper.secondary .wrapper-inner {
 		padding: 5px 0px 15px 0px;
+	}
+
+	.wrapper.header {
+		width: 100% !important;
+
+		.wrapper-inner {
+			padding-left: 25px !important;
+			padding-right: 25px !important;
+		}
+
 	}
 	
 	.thumbnail-links img {
