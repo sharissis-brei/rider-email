@@ -44,15 +44,6 @@ p {
 
 }
 
-.button {
-	letter-spacing: 1px;
-
-	td {
-		line-height: 100% !important;
-	}
-
-}
-
 .divider a {
 	cursor: default;
 	pointer-events: none;
@@ -76,9 +67,25 @@ th.column table:not(.button) {
 
 }
 
-table.button table td a {
-	display: inline-block;
-	text-align: center;
+table.button table {
+	letter-spacing: 1px;
+
+	td {
+		line-height: 100% !important;
+		padding: 6px 18px 6px 18px;
+
+		&,
+		a {
+			text-align: center;
+			display: inline-block;
+		}
+
+		a {
+			padding: 0 !important;
+		}
+
+	}
+
 }
 
 // Footer
