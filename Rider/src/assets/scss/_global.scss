@@ -2,6 +2,10 @@ body {
 	mso-line-height-rule: exactly;
 }
 
+table, tr, td {
+	border-collapse: separate;
+}
+
 a {
 	text-decoration: underline;
 	font-weight: bold;
@@ -9,6 +13,7 @@ a {
 
 p {
 	margin-top: $paragraph-margin-top;
+	width: 100%;
 
 	&.lead {
 		margin-top: 0px;
@@ -32,7 +37,7 @@ p {
 		padding-bottom: 10px;
 
 		&:first-child {
-			width: 20px;
+			width: 20px !important;
 		}
 
 	}
@@ -61,10 +66,10 @@ th.columns table:not(.button),
 th.column table:not(.button) {
 
 	&.social {
-		width: 105px;
+		width: 105px !important;
 
 		img {
-			width: 100%;
+			width: 16px !important;
 		}
 
 	}
@@ -72,8 +77,8 @@ th.column table:not(.button) {
 }
 
 table.button table td a {
-	width: auto;
 	display: inline-block;
+	text-align: center;
 }
 
 // Footer
@@ -119,10 +124,17 @@ table.button table td a {
 
 .hero-image-container {
 	margin-bottom: 30px;
+	width: 100% !important;
 }
 
 .hero-image {
-	width: 100% !important;
+	max-width: 100%;
+	width: 550px;
+
+	.has-sidebar & {
+		width: 363px;
+	}
+
 }
 
 .wrapper.header {
@@ -259,6 +271,10 @@ th.callout-inner.secondary {
 	}
 	
 	.thumbnail-links img {
+		width: 100% !important;
+	}
+
+	.hero-image {
 		width: 100% !important;
 	}
 
