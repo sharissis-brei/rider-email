@@ -189,6 +189,7 @@ table.button table {
 
 	img {
 		width: 168px;
+		line-height: 100% !important;
 	}
 
 	.caption {
@@ -201,9 +202,19 @@ table.button table {
 	}
 
 	h2 {
-		color: $white;
-		font-size: 13px;
-		line-height: 125% !important;
+		
+		&,
+		a {
+			color: $white;
+			font-size: 13px;
+			font-weight: normal;
+			line-height: 125% !important;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
 	}
 
 }
