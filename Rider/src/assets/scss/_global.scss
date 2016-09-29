@@ -23,7 +23,7 @@ p {
 
 .bullet {
 	color: $rider-red;
-	padding-right: 8px;
+	padding-right: 10px;
 	font-size: 24px;
 	vertical-align: text-top;
 	display: inline-block;
@@ -37,7 +37,8 @@ p {
 		padding-bottom: 10px;
 
 		&:first-child {
-			width: 20px !important;
+			width: 30px !important;
+			text-align: right;
 		}
 
 	}
